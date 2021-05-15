@@ -8,7 +8,7 @@ Platformio, esp32cam, arduino framework
 
 Using Platformio libraries:
 - Micro-RTSP by Kevin Hester 
-- esp8266_oled-ssd1306 by Thing Pulse
+- esp8266-oled-ssd1306 by Thing Pulse
 
 Platformio libraries
 
