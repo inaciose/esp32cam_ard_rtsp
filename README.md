@@ -6,7 +6,7 @@ I2C 128x64 128x32 OLED SSD1306 GM009605
 
 Platformio, esp32cam, arduino framework
 
-Using Platformio libraries:
+Using Platformio libs:
 - Micro-RTSP by Kevin Hester 
 - esp8266-oled-ssd1306 by Thing Pulse
 
@@ -19,5 +19,3 @@ Video available on the following address (change the ip)
 Library repos
 - https://github.com/ThingPulse/esp8266-oled-ssd1306
 - https://github.com/geeksville/Micro-RTSP
-
-
