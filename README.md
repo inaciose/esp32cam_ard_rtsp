@@ -10,8 +10,6 @@ Using Platformio libs:
 - Micro-RTSP by Kevin Hester 
 - esp8266-oled-ssd1306 by Thing Pulse
 
-Platformio libraries
-
 Video available on the following address (change the ip)
 - RTSP protocol: rtsp://192.168.1.10:8554/mjpeg/1
 - HTTP protocol: http://192.168.1.10/
