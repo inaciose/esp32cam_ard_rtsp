@@ -29,15 +29,13 @@ bool ledon = false;
 // ----------- 3 NEW LINES -------------
 #define I2C_SDA 14 // SDA Connected to GPIO 14
 #define I2C_SCL 15 // SCL Connected to GPIO 15
-TwoWire I2Cbus = TwoWire(0);
 
 #include "SSD1306.h"
 #define OLED_ADDRESS 0x3c
 #define I2C_SDA 14
 #define I2C_SCL 15
-SSD1306Wire display(OLED_ADDRESS, I2C_SDA, I2C_SCL, GEOMETRY_128_32);
+SSD1306Wire display(OLED_ADDRESS, I2C_SDA, I2C_SCL, GEOMETRY_128_64);
 bool hasDisplay; // we probe for the device at runtime
-
 #endif
 
 OV2640 cam;
@@ -50,13 +48,11 @@ WebServer server(80);
 WiFiServer rtspServer(8554);
 #endif
 
-
 #ifdef SOFTAP_MODE
 IPAddress apIP = IPAddress(192, 168, 1, 1);
 #else
 #include "wifikeys.h"
 #endif
-
 
 #ifdef ENABLE_WEBSERVER
 void handle_jpg_stream(void)
@@ -133,6 +129,8 @@ void setup()
         ;
     }
     Serial.println(F("Serial connected"));
+
+    //Wire.begin(I2C_SDA, I2C_SCL, 4000000);
 
   #ifdef ENABLE_OLED
     
